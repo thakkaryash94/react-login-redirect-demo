@@ -7,7 +7,7 @@ interface GuardedRoutesProps extends RouteComponentProps {
   children?: ReactNode
 }
 
-function GaurdedRoutes(props: GuardedRoutesProps) {
+function GuardedRoutes(props: GuardedRoutesProps) {
   const navigate = useNavigate()
   const location = useLocation()
 
@@ -25,4 +25,4 @@ function GaurdedRoutes(props: GuardedRoutesProps) {
   )
 }
 
-export default GaurdedRoutes
+export default GuardedRoutes
