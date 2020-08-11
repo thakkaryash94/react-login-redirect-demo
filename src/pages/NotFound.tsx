@@ -1,15 +1,13 @@
-import React, { useEffect, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { useNavigate, RouteComponentProps } from "@reach/router"
 
 function NotFound(props: RouteComponentProps) {
   const navigate = useNavigate()
-
-  useEffect(() => {
-    navigate('/')
-  }, [navigate])
-
   return (
-    <Fragment />
+    <Fragment>
+      <h1>Page Not Found</h1>
+      <button onClick={(_) => navigate(-1)}>Go Back</button>
+    </Fragment>
   )
 }
 

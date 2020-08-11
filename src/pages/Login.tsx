@@ -28,10 +28,10 @@ function Login(props: RouteComponentProps) {
     <>
       <h2>Login</h2>
       <form onSubmit={onSubmit}>
-        username: <input type="text" key="username" placeholder="admin" />
+        username: <input type="text" key="username" placeholder="admin" required />
         <br />
         <br />
-        password: <input type="password" key="password" placeholder="admin" />
+        password: <input type="password" key="password" placeholder="admin" required />
         <br />
         <br />
         <button type="submit">Login</button>
