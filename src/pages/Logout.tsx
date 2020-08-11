@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Cookies from 'js-cookie'
 import { useNavigate, RouteComponentProps } from "@reach/router"
 
-function Login(props: RouteComponentProps) {
+function Logout(props: RouteComponentProps) {
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -21,4 +21,4 @@ function Login(props: RouteComponentProps) {
   )
 }
 
-export default Login
+export default Logout
