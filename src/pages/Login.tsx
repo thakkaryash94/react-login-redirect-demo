@@ -17,8 +17,8 @@ function Login(props: RouteComponentProps) {
     e.preventDefault()
     Cookies.set('token', 'dummyToken')
     const searchParams = new URLSearchParams(location.search)
-    if (searchParams.has('redirect')) {
-      navigate(searchParams.get('redirect')!!)
+    if (searchParams.has('next')) {
+      navigate(searchParams.get('next')!!)
     } else {
       navigate('/dashboard')
     }

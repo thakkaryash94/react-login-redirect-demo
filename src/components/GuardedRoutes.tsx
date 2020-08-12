@@ -14,7 +14,7 @@ function GuardedRoutes(props: GuardedRoutesProps) {
   useEffect(() => {
     const token = Cookies.get('token')
     if (token === undefined) {
-      navigate(`/login?redirect=${location.pathname}`)
+      navigate(`/login?next=${location.pathname}`)
     }
   })
   return (
